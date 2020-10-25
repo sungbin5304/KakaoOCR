@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
                 .addFormDataPart(
                     "image",
                     "20190413_205303.jpg",
-                    File("/storage/emulated/0/Download/20190413_205303.jpg").asRequestBody()
+                    File("/storage/emulated/0/Download/Jn6MZ.png").asRequestBody()
                 ).build()
 
             val request = Request.Builder()
@@ -46,9 +46,8 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 override fun onResponse(call: Call, response: Response) {
-                    Log.d("AAAAA", "Response Body is " + response.body.toString())
+                    Log.d("AAAAA", "Response Body is " + response.body?.string())
                 }
-
             })
         }
     }
