@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
                 ).build()
 
             val request = Request.Builder()
-                .addHeader("Authorization", "KakaoAK 330ff6c8999f169eea46b7fab00be07a")
+                .addHeader("Authorization", "KakaoAK 비밀")
                 .addHeader("Accept-Charset", "UTF-8")
                 .addHeader("Content-Type", "multipart/form-data")
                 .addHeader("Host", "dapi.kakao.com")
